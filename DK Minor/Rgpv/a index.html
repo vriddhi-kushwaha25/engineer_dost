@@ -1,0 +1,374 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> Home page </title>
+	<link href="C:\Users\vridd\Desktop\DK Minor\Rgpv\images">
+    <style> 
+		html {
+			box-sizing: border-box;
+		  }
+		  
+		  *, *:before, *:after {
+			box-sizing: inherit;
+		  }
+		  .column {
+			float: left;
+			width: 33.3%;
+			height: 30%;
+			margin-bottom: 16px;
+			padding: 0 8px;
+			
+		  }
+		  
+		  @media screen and (max-width: 650px) {
+			.column {
+			  width: 100%;
+			  display: block;
+			  
+			}
+		  }
+		  
+		  .card {
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
+		  }
+		  
+		  .container {
+			padding: 0 16px;
+			background-color: rgb(51, 24, 24);
+			color: white;
+			
+		  }
+		  
+		  .container::after, .row::after {
+			content: "";
+			clear: both;
+			display: table;
+		  }
+		  
+		  .title {
+			color:wheat;
+		  }
+		  
+		  .button {
+			background-color:wheat;
+            border: 3px solid white;
+            color: black;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 16px;
+			width: 100%;
+		  }
+		  .button:hover {
+			background-color: brown;
+			
+		  }
+		body {
+			background-color:#fdfff5;
+			background-repeat: no-repeat;
+			background-position: center;
+			background-attachment: fixed;
+			background-size: cover;
+		}
+
+		.heading {
+			font-size: 20px;
+			text-decoration: none;
+			font-color: black;
+			font-family: Book Antiqua;
+			background-color:wheat;
+			align-items: center;
+			border-radius: 10px;
+			border: 3px solid white;
+			margin-bottom: 0;
+		}
+
+		.heading center {
+			overflow: auto;
+		}
+
+		 .heading h1 {
+			font-color:brown;
+			font-size: 36px;
+			font-family:'Lucida Sans';
+			text-decoration: none;
+			margin-bottom: 0;
+		} 
+
+		.heading p {
+			margin-top: 0;
+			color: brown;	
+		}
+
+		  .option_row {
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+			margin-top: 0%;
+		} 
+
+		.special_options {
+			width: 350px;
+			height: 310px;
+			float: left;
+			margin-top: 20px;
+			margin-bottom: 20px;
+			box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.5), 0px 8px 20px 0 rgba(0, 0, 0, 0.35);
+			transition: transform 0.75s;
+			overflow: hidden;
+			background-color:wheat;
+			border-radius: 20px;
+		}
+		
+		.special_button{
+			width: 370px;
+			height: 350px;
+			border-radius: 40px;
+			
+		}
+		
+		.special_options:hover {
+			transform: scale(1.025);
+		}
+     /* pill button */
+	 .pillbutton {
+  background-color:rgb(221, 196, 196);
+  border: 3px solid white;
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 16px;
+}
+
+.pillbutton:hover {
+  background-color: brown;
+  color:white;
+}
+
+		.title_list {
+			font-family: arial;
+			font-size: 18px;
+			font-weight: bold;
+			font-color: brown 	;
+			text-decoration: none;
+
+		}
+		
+		#about {
+			background-color:wheat;
+			border-radius: 10px 10px 10px 10px;
+			margin-bottom: 0;
+			height : 170px;
+		}
+		
+		#about h1 {
+			font-size: 36px;
+			font-family: Berlin Sans FB;
+			text-decoration: none;
+			margin-bottom: 0;
+		    font-weight:none;
+			color: brown;
+		}
+		
+		#about p{
+			text-align:center;
+			font-size:20px;
+			
+		}
+		
+		.contactus{
+			background-color:rgb(18, 18, 18);
+			border-radius: 10px 10px 0px 0px;
+			margin-bottom: 0;
+			height : 190px;
+		}
+		.contactus h1 {
+			 color: brown;
+			font-size: 36px;
+			font-family: Berlin Sans FB;
+			text-decoration: none;
+			margin-bottom: 0;
+			font-weight:none;
+		}				
+
+		.contactus .contable .head1 {
+			
+			font-size:22px;
+			text-decoration:none;
+			font-weight:bold;
+			color: brown;
+		}	
+		
+	    /*img{
+		    border-radius: 9%;
+			height:500px;
+			width: 500px;
+		} */
+        
+		.card img{
+		    border-radius: 9%;
+			height:500px;
+			width: 500px;
+		} 
+
+	</style>
+
+</head>
+<body background="C:\Users\vridd\Desktop\DK Minor\bg-homepage.png">
+	<div class="heading">
+		<center>
+			<h1> ENGINEER DOST </h1>
+			<p><i><b>Fikar not..... <br> ... Me hu na</b></i></p>
+		</center>
+	</div>
+<br><br>
+<!-- pill button -->
+<button class="pillbutton"><b>Home</b></button>
+<button class="pillbutton"><b>Services</b> </button>
+<button class="pillbutton"><b>Contact us</b></button>
+	<br><br>
+<!--first row started and this is comment-->
+
+	<div class="option_row">
+
+		
+		<button class="special_button" >
+		<div class="special_options">
+			<center><a href="C:\Users\vridd\Desktop\DK Minor\Rgpv\rgpvbranch.html"> <img src="C:\Users\vridd\Desktop\DK Minor\images - Copy\RGPV LOGO.png" alt="RGPV UNIVERSITY" height="250px" width="100%">
+			</a><p class="title_list"> RGPV UNIVERSITY </p>
+			</center>
+		</div>
+		</button>
+		
+		<button class="special_button" > 
+		<div class="special_options">	
+			<center> <a href="C:\Users\vridd\Desktop\DK Minor\Rgpv\rgpvbranch.html"><img src="C:\Users\vridd\Desktop\DK Minor\images - Copy\SAGE LOGO.jpg" alt="SAGE UNIVERSITY" height="250px" width="100%">
+			</a><p class="title_list"> SAGE UNIVERSITY </p>
+			</center>
+		</div>
+		</button>
+		
+		<button class="special_button" >
+		<div class="special_options">
+			<center> <a href="C:\Users\vridd\Desktop\DK Minor\Rgpv\rgpvbranch.html"><img src="C:\Users\vridd\Desktop\DK Minor\images - Copy\DAVV LOGO.jfif" alt="DAVV UNIVERSITY" height="250px" width="100%">
+			</a><p class="title_list"> DAVV UNIVERSITY </p>
+			</center>
+		</div>
+		</button>
+		
+	</div>
+	<br>
+
+<!--second row started and this is comment-->
+
+
+	<div class="option_row">
+
+		<button class="special_button" > 
+		<div class="special_options">	
+			<center> <a href="C:\Users\vridd\Desktop\DK Minor\Rgpv\rgpvbranch.html"></a><img src="C:\Users\vridd\Desktop\DK Minor\images\ABVV LOGO.jpg" alt="ABVV UNIVERSITY" height="250px" width="100%">
+				<p class="title_list"> ABVV UNIVERSITY </p>
+			</center>
+		</div>
+		</button>
+		
+		<button class="special_button" >
+		<div class="special_options">
+			<center> <a href="C:\Users\vridd\Desktop\DK Minor\Rgpv\rgpvbranch.html"><img src="C:\Users\vridd\Desktop\DK Minor\images\DU LOGO.jpg" alt="DELHI UNIVERSITY" height="250px" width="100%">
+			</a><p class="title_list"> DELHI UNIVERSITY </p>
+			</center>
+		</div>
+		</button>
+
+		<button class="special_button" >
+		<div class="special_options">
+			<center> 
+				<a href="C:\Users\vridd\Desktop\DK Minor\Rgpv\rgpvbranch.html"><img src="C:\Users\vridd\Desktop\DK Minor\images\RKDF LOGO.JPG" alt="RKDF UNIVERSITY" height="250px" width="100%"></a>
+				<p class="title_list"> RKDF UNIVERSITY </p>
+			</center>
+		</div>
+		</button>
+		
+	</div>
+	<br><br>
+
+	<!-- <div id="about">
+		<center><h1> ABOUT </h1></center>
+		<p>
+		We ........................... <br>
+		We .............................<br>
+		</p>
+ 
+		<p>	Thank you </p>
+		
+	</div> -->
+	<div class="row">
+		<div class="column">
+		  <div class="card">
+			<img src="C:\Users\vridd\Desktop\DK Minor\team lead.jpg" alt="vriddhi" style="width:100%">
+			<div class="container">
+			  <h2>Vriddhi Kushwaha</h2>
+			  <p class="title">Team lead </p>
+			  <p>Strongly believes that nothing is impossible.
+			  Smart working and good at making decisions </p>
+			  <p>vriddhikuswaha@gmail.com</p>
+			  <p><button class="button">Contact</button></p>
+			</div>
+		  </div>
+		</div>
+	  
+		<div class="column">
+		  <div class="card">
+			<img src="C:\Users\vridd\Desktop\DK Minor\team mem2.jpg" alt="dipanshu" style="width:100%">
+			<div class="container">
+			  <h2>Dipanshu Kanera</h2>
+			  <p class="title">Team member</p>
+			  <p> Belives in himself and has a "Never give up" attitude
+			  with a strong determined mindset </p>
+			  <p>kaneradipanshu@gmail.com</p>
+			  <p><button class="button">Contact</button></p>
+			</div>
+		  </div>
+		</div>
+		
+		
+		<div class="column">
+		  <div class="card">
+			<img src="C:\Users\vridd\Desktop\DK Minor\team mem1.jpg" alt="priyanka" style="width:100%">
+			<div class="container">
+			  <h2>Priyanka Saket</h2>
+			  <p class="title">Team member</p>
+			  <p>Manages everything efficiently and works with a discipline and has a creative mind</p>
+			  <p>priyanka15saket@gmail.com</p>
+			  <p><button class="button">Contact</button></p>
+			</div>
+		  </div>
+		</div>
+
+		<div class="column">
+			<div class="card">
+			  <img id="university" src="C:\Users\vridd\Desktop\DK Minor\teram mem4.jpg" alt="vaibhav" style="width:100%">
+			  <div class="container">
+				<h2>Vaibhav Mahule</h2>
+				<p class="title">Team member</p>
+				<p>Dedicated towards work and always works with optimal and optimistic approach</p>
+				<p>vaibhavmahule6261@gmail.com</p>
+				<p><button class="button">Contact</button></p>
+			  </div>
+			</div>
+		  </div>
+	  </div>
+
+</body>
+</html>
